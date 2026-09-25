@@ -8,6 +8,7 @@
 
 An end-to-end industrial data engineering and operational intelligence platform designed around semiconductor manufacturing telemetry (SECOM). Converts high-dimensional physical sensor streams into automated data quality gates, an enterprise dimensional data warehouse (PostgreSQL), cost-sensitive machine learning failure-risk models, explainable root-cause diagnostics (SHAP), and real-time operational decision support.
 
+>Note: This is an independent portfolio project using publicly available manufacturing data; operational costs, routing thresholds and engineering actions are simulated assumptions for demonstrating digital-transformation and decision-support methodology.
 ---
 
 ## Industrial Problem & Business Case
