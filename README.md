@@ -10,7 +10,7 @@ An end-to-end industrial data engineering and operational intelligence platform 
 
 ---
 
-## 🏭 Industrial Problem & Business Case
+## Industrial Problem & Business Case
 
 In semiconductor fabrication plants (fabs), silicon wafers undergo hundreds of chemical, photolithographic, and thermal steps. Even microscopic chamber shifts or gas flow drift can result in defective wafers.
 
@@ -22,7 +22,7 @@ In semiconductor fabrication plants (fabs), silicon wafers undergo hundreds of c
 
 ---
 
-## 🏗️ 3-Tier PostgreSQL Data Architecture
+## 3-Tier PostgreSQL Data Architecture
 
 To prevent unwieldy 590-column wide-table anti-patterns, the system implements a **hybrid relational + JSONB dimensional model**:
 
@@ -57,7 +57,7 @@ To prevent unwieldy 590-column wide-table anti-patterns, the system implements a
 
 ---
 
-## 📊 Data Quality & Profiling Scorecard
+## Data Quality & Profiling Scorecard
 
 Automated profiling executed on the raw UCI SECOM dataset (ID: 179) via [generate_quality_report.py](file:///c:/Users/ZhuanZ1/Desktop/manufacturing-operations-intelligence/src/quality/generate_quality_report.py):
 
@@ -78,7 +78,7 @@ Automated profiling executed on the raw UCI SECOM dataset (ID: 179) via [generat
 
 ---
 
-## 📈 SQL Analytics & Operational Findings
+## SQL Analytics & Operational Findings
 
 Executing the analytical warehouse views ([run_sql_analytics.py](file:///c:/Users/ZhuanZ1/Desktop/manufacturing-operations-intelligence/src/transformation/run_sql_analytics.py)) exposed critical factory patterns:
 
@@ -91,7 +91,7 @@ Executing the analytical warehouse views ([run_sql_analytics.py](file:///c:/User
 
 ---
 
-## 🤖 Machine Learning Benchmarks & Cost Optimization
+## Machine Learning Benchmarks & Cost Optimization
 
 To prevent time-travel data leakage, models were trained on a **strict chronological 80/20 split** (first 1,253 runs train, subsequent 314 runs test). The probability threshold was tuned against plant economics ($FN \times £450 + FP \times £25$):
 
@@ -108,7 +108,7 @@ To prevent time-travel data leakage, models were trained on a **strict chronolog
 
 ---
 
-## 🔍 Explainable AI (SHAP) & Root-Cause Playbooks
+## Explainable AI (SHAP) & Root-Cause Playbooks
 
 SHAP attributions identify which physical chamber parameters drive quality failure risk:
 
@@ -124,7 +124,7 @@ SHAP attributions identify which physical chamber parameters drive quality failu
 
 ---
 
-## 📦 Operational Decision Support & Dynamic Safety Stock
+## Operational Decision Support & Dynamic Safety Stock
 
 Connecting ML predictions to daily shop-floor workflows ([inventory_operations_logic.py](file:///c:/Users/ZhuanZ1/Desktop/manufacturing-operations-intelligence/src/forecasting/inventory_operations_logic.py)):
 
@@ -140,7 +140,7 @@ Connecting ML predictions to daily shop-floor workflows ([inventory_operations_l
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 manufacturing-operations-intelligence/
@@ -195,7 +195,7 @@ manufacturing-operations-intelligence/
 
 ---
 
-## 🚀 Quickstart & Pipeline Reproduction
+## Quickstart & Pipeline Reproduction
 
 ### 1. Environment Setup
 ```bash
@@ -225,14 +225,3 @@ Launch Jupyter to explore [01_data_profiling.ipynb](file:///c:/Users/ZhuanZ1/Des
 ```bash
 jupyter notebook notebooks/01_data_profiling.ipynb
 ```
-
----
-
-## 🎯 KTP Associate & Career Positioning
-
-This platform was built to demonstrate real-world readiness for **Knowledge Transfer Partnerships (KTP)**, Digital Transformation, and Manufacturing Analytics roles:
-* **Enterprise Architecture:** Avoids naive flat-file notebooks; demonstrates production-grade 3-tier data warehousing.
-* **Business Acumen:** Replaces generic classification accuracy with financial **Cost of Quality (CoQ)** optimization.
-* **Domain Empathy:** Bridges physical factory operations with explainable AI (XAI) and real-time shop-floor lot dispatch.
-
-See the complete [KTP Interview & CV Guide](file:///c:/Users/ZhuanZ1/Desktop/manufacturing-operations-intelligence/docs/ktp_interview_and_cv_guide.md) for full STAR behavioral stories and architectural defense strategies.
