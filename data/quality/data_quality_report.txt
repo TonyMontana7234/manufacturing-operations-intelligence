@@ -1,0 +1,20 @@
+DATA QUALITY REPORT
+===================
+
+Dataset: SECOM
+
+Rows: 1,567
+Features: 591
+
+Duplicate rows: 0
+
+Missing-value rate: 4.54%
+
+Columns >50% missing: 28
+
+Constant columns: 116
+
+Pass observations: 1,463
+Fail observations: 104
+
+Quality status: WARNING
